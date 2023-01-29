@@ -1,8 +1,17 @@
 
 function insert(num) {
     let numero = document.getElementById("resultado").innerHTML;
-    document.getElementById("resultado").innerHTML = numero + num;
+    if(numero.length < 15) {
+        document.getElementById("resultado").innerHTML = numero + num;
+    }
 }
+function insereOperador(operador) {
+    
+    document.getElementById("resultado").innerHTML += operador;
+
+    
+}
+
 
 function clean() {
     document.getElementById("resultado").innerHTML = "";
